@@ -24,16 +24,26 @@
         }
 
         .character-sheet {
-            background-color: #444;
+            background-color: #fff;
+            border: 2px solid #333;
             padding: 20px;
             border-radius: 10px;
         }
 
-        .section {
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #555;
-            border-radius: 5px;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
         }
 
         /* Customize the styles further as needed */
@@ -43,38 +53,66 @@
     <div class="container">
         <h1>DnD Character Sheet</h1>
         <div class="character-sheet">
-            <div class="section">
-                <h2>Character Info</h2>
-                <p>Name: John Doe</p>
-                <p>Race: Human</p>
-                <p>Class: Fighter</p>
-                <p>Level: 3</p>
-            </div>
-            
-            <div class="section">
-                <h2>Stats</h2>
-                <p>Strength: 16</p>
-                <p>Dexterity: 14</p>
-                <p>Constitution: 12</p>
-                <p>Intelligence: 10</p>
-                <p>Wisdom: 13</p>
-                <p>Charisma: 15</p>
-            </div>
-            
-            <div class="section">
-                <h2>Saving Throws</h2>
-                <p>Strength: +3</p>
-                <p>Dexterity: +2</p>
-                <p>Constitution: +1</p>
-            </div>
-            
-            <div class="section">
-                <h2>Proficiencies</h2>
-                <p>Weapons: Longsword, Shortbow</p>
-                <p>Skills: Athletics, Acrobatics</p>
-            </div>
+            <table>
+                <tr>
+                    <th colspan="2">Character Info</th>
+                </tr>
+                <tr>
+                    <td>Name:</td>
+                    <td>John Doe</td>
+                </tr>
+                <tr>
+                    <td>Race:</td>
+                    <td>Human</td>
+                </tr>
+                <tr>
+                    <td>Class:</td>
+                    <td>Fighter</td>
+                </tr>
+                <tr>
+                    <td>Level:</td>
+                    <td>3</td>
+                </tr>
+                <!-- Add more rows for additional character info -->
+            </table>
 
-            <!-- Add more sections as needed -->
+            <table>
+                <tr>
+                    <th>Stats</th>
+                    <th>Saving Throws</th>
+                </tr>
+                <tr>
+                    <td>
+                        Strength: 16<br>
+                        Dexterity: 14<br>
+                        Constitution: 12<br>
+                        Intelligence: 10<br>
+                        Wisdom: 13<br>
+                        Charisma: 15
+                    </td>
+                    <td>
+                        Strength: +3<br>
+                        Dexterity: +2<br>
+                        Constitution: +1
+                    </td>
+                </tr>
+                <!-- Add more rows for additional stats and saving throws -->
+            </table>
+
+            <table>
+                <tr>
+                    <th>Proficiencies</th>
+                </tr>
+                <tr>
+                    <td>
+                        Weapons: Longsword, Shortbow<br>
+                        Skills: Athletics, Acrobatics
+                    </td>
+                </tr>
+                <!-- Add more rows for additional proficiencies -->
+            </table>
+
+            <!-- Add more tables for other sections of the character sheet -->
         </div>
     </div>
 </body>
