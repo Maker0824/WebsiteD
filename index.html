@@ -5,92 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>D&D Character Sheet</title>
     <style>
-        /* Reset some default styles */
-        body, h1, h2, p {
-            margin: 0;
-            padding: 0;
-        }
-
         body {
-            background-color: #222;
+            background-color: #333;
             color: #fff;
             font-family: Arial, sans-serif;
         }
-
-        .character-sheet {
-            width: 100%;
-            max-width: 400px;
-            margin: 20px auto;
-            background-color: #333;
-            padding: 20px;
-            border: 2px solid #444;
-            border-radius: 10px;
-        }
-
-        .header {
-            text-align: center;
-        }
-
-        .header h1 {
-            font-size: 24px;
-            margin-bottom: 5px;
-        }
-
-        .header h2 {
-            font-size: 18px;
-        }
-
-        .stats {
-            margin-top: 20px;
-        }
-
-        .stat {
+        
+        .container {
             display: flex;
             justify-content: space-between;
+            padding: 20px;
+        }
+        
+        .left {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .middle {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .right {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .stat-box {
+            background-color: #444;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        
+        .stat-number {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .stat-modifier {
+            font-size: 18px;
+            color: #888;
+        }
+        
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
             margin-bottom: 10px;
         }
-
-        .stat p {
-            font-size: 16px;
+        
+        .proficiencies {
+            background-color: #444;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
         }
-
-        /* Add more CSS for skills, equipment, and other sections as needed */
+        
+        .features-traits {
+            background-color: #444;
+            padding: 10px;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
-    <div class="character-sheet">
-        <div class="header">
-            <h1>Character Name</h1>
-            <h2>Character Class & Level</h2>
+    <div class="container">
+        <div class="left">
+            <div class="stat-box">
+                <div class="stat-number">18</div>
+                <div class="stat-modifier">+4</div>
+            </div>
+            <!-- Repeat this block for each stat -->
         </div>
-        <div class="stats">
-            <!-- Fill in your character's data here -->
-            <div class="stat">
-                <p>Strength</p>
-                <p>14</p>
-            </div>
-            <div class="stat">
-                <p>Dexterity</p>
-                <p>16</p>
-            </div>
-            <div class="stat">
-                <p>Constitution</p>
-                <p>12</p>
-            </div>
-            <div class="stat">
-                <p>Intelligence</p>
-                <p>10</p>
-            </div>
-            <div class="stat">
-                <p>Wisdom</p>
-                <p>14</p>
-            </div>
-            <div class="stat">
-                <p>Charisma</p>
-                <p>18</p>
+        <div class="middle">
+            <div class="section-title">Saving Throws</div>
+            <!-- Include saving throws here -->
+            <div class="section-title">Proficiencies</div>
+            <div class="proficiencies">
+                <!-- Include proficiencies here -->
             </div>
         </div>
-        <!-- Add more sections for skills, equipment, and other character details -->
+        <div class="right">
+            <div class="section-title">Features and Traits</div>
+            <div class="features-traits">
+                <!-- Include features and traits here -->
+            </div>
+        </div>
     </div>
 </body>
 </html>
